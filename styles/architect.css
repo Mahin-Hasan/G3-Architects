@@ -114,6 +114,37 @@
       font-weight: 700;
   }
 
+  /* Feature Section Styles */
+  .features {
+      display: flex;
+      margin-top: 130px;
+      gap: 100px;
+  }
+
+  .features .section-title {
+      border-left: 5px solid #FF900E;
+      padding-left: 20px;
+  }
+
+  .feature-content .card {
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      background: #FFF;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  }
+
+  .ten-years-badge {
+      border-radius: 8px;
+      background: #FF900E;
+      color: #FFF;
+      width: 342px;
+      padding: 40px;
+  }
+  .ten-years-badge h2{
+    font-size: 4rem;
+  }
+
   /* Facts Section */
   .facts-card-container {
       display: flex;
@@ -139,20 +170,23 @@
       margin-top: 10px;
       margin-bottom: 10px;
   }
-/* sponsors section */
-.sponsors{
-    text-align: center;
-}
-.sponsors-img-container{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-}
-.sponsors-img-container img{
-    width: 165px;
-}
+
+  /* sponsors section */
+  .sponsors {
+      text-align: center;
+  }
+
+  .sponsors-img-container {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .sponsors-img-container img {
+      width: 165px;
+  }
 
   /* Responsive media queries */
 
@@ -163,7 +197,9 @@
       }
 
       nav,
-      .teams-container,.facts-card-container,.sponsors-img-container {
+      .teams-container,
+      .facts-card-container,
+      .sponsors-img-container {
           flex-direction: column;
       }
 
@@ -171,11 +207,13 @@
           grid-template-columns: 1fr;
       }
 
-      .teams-content,.facts-card-container {
+      .teams-content,
+      .facts-card-container {
           padding: 0 20px 0 20px;
       }
-      .facts-card-container{
-        gap: 20px;
+
+      .facts-card-container {
+          gap: 20px;
       }
   }
 
@@ -186,7 +224,8 @@
       }
 
       nav,
-      .teams-container,.sponsors-img-container {
+      .teams-container,
+      .sponsors-img-container {
           flex-direction: column;
       }
   }
